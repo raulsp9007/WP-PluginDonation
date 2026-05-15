@@ -3,6 +3,8 @@
  * Plugin Name: FAM Donation System
  * Description: Authorize.net Accept Hosted donations. Use [fam_donation] on any page.
  * Version:     1.0.0
+ * Author:      Ermis Media Productions
+ * Author URI:  https://ermismedia.com
  */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
