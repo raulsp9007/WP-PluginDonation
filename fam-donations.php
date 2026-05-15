@@ -541,6 +541,32 @@ function fam_donation_shortcode($atts) {
   <button class="fam-btn-main" onclick="famGoPayment()">
     🔒 <span id="fam-blabel">Proceed to secure payment — $50</span>
   </button>
+  <div class="fam-cards-row">
+    <span class="fam-cards-lbl">We accept</span>
+    <div class="fam-cards-logos">
+      <svg class="fam-card-logo" viewBox="0 0 50 32" xmlns="http://www.w3.org/2000/svg">
+        <rect width="50" height="32" rx="4" fill="#1A1F71"/>
+        <text x="25" y="22" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700" font-style="italic" letter-spacing="-0.5">VISA</text>
+      </svg>
+      <svg class="fam-card-logo" viewBox="0 0 50 32" xmlns="http://www.w3.org/2000/svg">
+        <rect width="50" height="32" rx="4" fill="#252525"/>
+        <circle cx="19" cy="16" r="9" fill="#EB001B"/>
+        <circle cx="31" cy="16" r="9" fill="#F79E1B"/>
+        <path d="M25 9.5a9 9 0 0 1 0 13A9 9 0 0 1 25 9.5z" fill="#FF5F00"/>
+      </svg>
+      <svg class="fam-card-logo" viewBox="0 0 50 32" xmlns="http://www.w3.org/2000/svg">
+        <rect width="50" height="32" rx="4" fill="#2E77BC"/>
+        <text x="25" y="21" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.3">AMERICAN</text>
+        <text x="25" y="28" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="5.5" letter-spacing="1.5">EXPRESS</text>
+      </svg>
+      <svg class="fam-card-logo" viewBox="0 0 50 32" xmlns="http://www.w3.org/2000/svg">
+        <rect width="50" height="32" rx="4" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+        <text x="14" y="21" fill="#231F20" font-family="Arial,sans-serif" font-size="8" font-weight="700">DIS</text>
+        <circle cx="36" cy="16" r="9" fill="#F76F20" opacity="0.9"/>
+        <text x="36" y="19.5" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="5.5" font-weight="700">DISC</text>
+      </svg>
+    </div>
+  </div>
   <div class="fam-trust">
     <span>▲ Authorize.net</span>
     <span>♦ Tax-deductible</span>
@@ -681,6 +707,12 @@ function fam_donation_shortcode($atts) {
   border-radius:8px;padding:14px;font-size:14px;font-weight:700;cursor:pointer;
   transition:opacity .15s;font-family:inherit}
 .fam-btn-main:hover{opacity:.87}
+.fam-cards-row{display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:4px 22px 12px}
+.fam-cards-lbl{font-size:10px;color:#9a8878;white-space:nowrap}
+.fam-cards-logos{display:flex;gap:6px;align-items:center}
+.fam-card-logo{width:42px;height:27px;border-radius:4px;
+  box-shadow:0 1px 3px rgba(0,0,0,.15)}
 .fam-trust{display:flex;align-items:center;justify-content:center;gap:18px;
   padding:6px 22px 16px;font-size:11px;color:#9a8878;flex-wrap:wrap}
 .fam-infobadge{background:#faf6f1;border:1px solid #e8e1d9;border-radius:8px;
